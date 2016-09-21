@@ -1,0 +1,8 @@
+<h1>Library Reading Group</h1>
+
+<% @books.each do |book|%>
+  <h2><%= link_to book.title, book_path(book) %></h2>
+
+<% end %>
+
+<%= link_to "Add a Book", new_book_path %>
